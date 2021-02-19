@@ -121,7 +121,7 @@ namespace VentiBot.net
                 _ => exception.ToString()
             };
 
-            Console.WriteLine(errMsg);
+            Console.Error.WriteLineAsync(errMsg);
         }
     }
 }
